@@ -13,6 +13,7 @@ deploy:
   script:
     - bash -c "ssh-add <(echo \"$PRIVATE_KEY\")"
     - ssh root@$HOST rm -r -f /root/airflow/dags/*
-    - rsync -av --exclude=".gitlab-ci.yml" ./ root@$HOST:/airflow/dags/
+    - scp ./*.py root@$HOST:/root/airflow/dags
+    - scp -r ./tasks root@$HOST:/root/airflow/dags
   only:
     - main
