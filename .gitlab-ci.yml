@@ -1,0 +1,19 @@
+image: alpine:latest
+stages:
+  - deploy
+
+before_script:
+  - 'which ssh-agent || ( apk update && apk add openssh-client bash )'
+  - mkdir -p ~/.ssh
+  - eval $(ssh-agent -s)
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+deploy:
+  stage: deploy
+  script:
+    - bash -c "ssh-add <(echo \"$PRIVATE_KEY\")"
+    - ssh root@$HOST rm -r -f /root/airflow/dags/*
+    - scp *.py root@$HOST:/root/airflow/dags
+    - scp ./tasks root@$HOST:/root/airflow/dags
+  only:
+    - main

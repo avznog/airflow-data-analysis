@@ -2,7 +2,7 @@ import requests
 import json
 
 def extractor (): 
-    url = 'https://data.economie.gouv.fr/api/records/1.0/search/?dataset=prix-des-carburants-en-france-flux-instantane-v2&q=&lang=fr&rows=1&facet=departement&facet=region&facet=Gazole_maj&facet=Gazole_prix'
+    url = 'https://data.economie.gouv.fr/api/records/1.0/search/?dataset=prix-des-carburants-en-france-flux-instantane-v2&q=&lang=fr&rows=10000&facet=departement&facet=region&facet=Gazole_maj&facet=Gazole_prix'
 
     response = requests.get(url)
 

@@ -1,4 +1,5 @@
 import datetime
+from airflow.utils.dates import days_ago
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 import requests
@@ -10,8 +11,8 @@ def execute_task_2():
 
 with DAG(
     dag_id="main-project",
-    start_date=datetime.datetime(2023, 5, 5),
-    schedule="@daily",
+    schedule=None,
+    start_date=days_ago(0)
 ) as dag:
 
     extraction = PythonOperator(
