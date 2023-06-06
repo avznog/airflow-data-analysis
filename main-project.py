@@ -1,35 +1,38 @@
-import datetime
 from airflow.utils.dates import days_ago
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
-import requests
-import json
-from tasks.extractor import extractor
+from airflow.providers.postgres.operators.postgres import PostgresOperator
+from tasks.scrapFromWeb import scrapFromWeb
+from tasks.createRequest import createRequest
     
-def execute_task_2():
-    print("Executinyg!uhijopoklpg Task 2")
-
 with DAG(
-    dag_id="main-project",
-    schedule=None,
-    start_date=days_ago(0)
+	dag_id="main-project",
+	schedule=None,
+	start_date=days_ago(0)
 ) as dag:
 
-    extraction = PythonOperator(
-        task_id='extractor',
-        python_callable=extractor
-    )
+	def sendToPg(ti):
+		d = ti.xcom_pull(key="insert_request", task_ids="create_request")
+		print(d)
 
-    # task_2 = PythonOperator(
-    #     task_id='task_2',
-    #     python_callable=execute_task_2
-    # )
+	scrap_from_web = PythonOperator(
+		task_id='scrap_from_web',
+		python_callable=scrapFromWeb
+	)
 
-    # task_3 = PythonOperator(
-    #     task_id='task_3',
-    #     python_callable=execute_task_3
-    # )
+	create_request = PythonOperator(
+		task_id='create_request',
+		python_callable=createRequest
+	)
 
-    # extraction >> task_2 >> task_3  # Définit l'ordre d'exécution des tâches
+	send_to_pg = PostgresOperator(
+		task_id="send_to_pg",
+		postgres_conn_id="localhost_postgres",
+		sql=
+		"""
+		{{ti.xcom_pull(key="insert_request", task_ids="create_request")}}
+		"""
 
-    extraction
+	)
+
+	scrap_from_web >> create_request >> send_to_pg

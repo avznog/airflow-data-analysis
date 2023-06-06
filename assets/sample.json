@@ -1,0 +1,420 @@
+[
+  {   "datasetid": "prix-des-carburants-en-france-flux-instantane-v2",
+      "recordid": "96a9efaba212b59855b685742d664b19ef171c35",
+      "fields": {
+        "services": "{\"service\": [\"Boutique alimentaire\", \"Boutique non alimentaire\", \"Carburant additiv\u00e9\", \"Piste poids lourds\", \"Lavage automatique\", \"Vente de gaz domestique (Butane, Propane)\", \"Vente d'additifs carburants\", \"Wifi\"]}",
+        "region": "Bourgogne-Franche-Comt\u00e9",
+        "gazole_maj": "2023-06-06 07:46:56",
+        "id": 21600006,
+        "horaires": "{\"@automate-24-24\": \"\", \"jour\": [{\"@id\": \"1\", \"@nom\": \"Lundi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"07.00\", \"@fermeture\": \"19.00\"}}, {\"@id\": \"2\", \"@nom\": \"Mardi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"07.00\", \"@fermeture\": \"19.00\"}}, {\"@id\": \"3\", \"@nom\": \"Mercredi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"07.00\", \"@fermeture\": \"19.00\"}}, {\"@id\": \"4\", \"@nom\": \"Jeudi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"07.00\", \"@fermeture\": \"19.00\"}}, {\"@id\": \"5\", \"@nom\": \"Vendredi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"07.00\", \"@fermeture\": \"19.00\"}}, {\"@id\": \"6\", \"@nom\": \"Samedi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"07.00\", \"@fermeture\": \"19.00\"}}, {\"@id\": \"7\", \"@nom\": \"Dimanche\", \"@ferme\": \"1\"}]}",
+        "gazole_prix": "1.749",
+        "pop": "R",
+        "horaires_automate_24_24": "Non",
+        "e10_maj": "2023-06-06 07:46:57",
+        "cp": "21600",
+        "prix": "[{\"@nom\": \"Gazole\", \"@id\": \"1\", \"@maj\": \"2023-06-06 07:46:56\", \"@valeur\": \"1.749\"}, {\"@nom\": \"E10\", \"@id\": \"5\", \"@maj\": \"2023-06-06 07:46:57\", \"@valeur\": \"1.912\"}, {\"@nom\": \"SP98\", \"@id\": \"6\", \"@maj\": \"2023-06-06 07:46:57\", \"@valeur\": \"1.990\"}]",
+        "ville": "Longvic",
+        "code_region": "27",
+        "code_departement": "21",
+        "latitude": "4728200",
+        "departement": "C\u00f4te-d'Or",
+        "carburants_indisponibles": "SP95;E85;GPLc",
+        "geom": [
+          47.282,
+          5.063
+        ],
+        "sp98_maj": "2023-06-06 07:46:57",
+        "sp98_prix": "1.990",
+        "services_service": "Boutique alimentaire//Boutique non alimentaire//Carburant additiv\u00e9//Piste poids lourds//Lavage automatique//Vente de gaz domestique (Butane, Propane)//Vente d'additifs carburants//Wifi",
+        "e10_prix": "1.912",
+        "carburants_disponibles": "Gazole;E10;SP98",
+        "adresse": "Route de Seurre",
+        "longitude": 506300.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.063,
+          47.282
+        ]
+      },
+      "record_timestamp": "2023-06-06T09:04:00.264Z"
+    },
+    {
+      "datasetid": "prix-des-carburants-en-france-flux-instantane-v2",
+      "recordid": "24c440afc4b44502b7300d100de69d68c29e31f2",
+      "fields": {
+        "geom": [
+          42.4,
+          9.53
+        ],
+        "services": "{\"service\": [\"Boutique alimentaire\", \"Boutique non alimentaire\", \"Restauration \u00e0 emporter\", \"Vente de fioul domestique\", \"Vente de p\u00e9trole lampant\", \"Station de gonflage\", \"Piste poids lourds\", \"Lavage automatique\", \"Lavage manuel\", \"Services r\u00e9paration / entretien\", \"Vente de gaz domestique (Butane, Propane)\", \"Vente d'additifs carburants\", \"Automate CB 24/24\", \"DAB (Distributeur automatique de billets)\"]}",
+        "region": "Corse",
+        "gazole_maj": "2023-02-08 07:51:18",
+        "id": 20230003,
+        "horaires": "{\"@automate-24-24\": \"1\", \"jour\": [{\"@id\": \"1\", \"@nom\": \"Lundi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"06.00\", \"@fermeture\": \"20.00\"}}, {\"@id\": \"2\", \"@nom\": \"Mardi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"06.00\", \"@fermeture\": \"20.00\"}}, {\"@id\": \"3\", \"@nom\": \"Mercredi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"06.00\", \"@fermeture\": \"20.00\"}}, {\"@id\": \"4\", \"@nom\": \"Jeudi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"06.00\", \"@fermeture\": \"20.00\"}}, {\"@id\": \"5\", \"@nom\": \"Vendredi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"06.00\", \"@fermeture\": \"20.00\"}}, {\"@id\": \"6\", \"@nom\": \"Samedi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"06.00\", \"@fermeture\": \"20.00\"}}, {\"@id\": \"7\", \"@nom\": \"Dimanche\", \"@ferme\": \"\", \"horaire\": [{\"@ouverture\": \"07.00\", \"@fermeture\": \"12.00\"}, {\"@ouverture\": \"14.00\", \"@fermeture\": \"20.00\"}]}]}",
+        "gazole_prix": "1.880",
+        "services_service": "Boutique alimentaire//Boutique non alimentaire//Restauration \u00e0 emporter//Vente de fioul domestique//Vente de p\u00e9trole lampant//Station de gonflage//Piste poids lourds//Lavage automatique//Lavage manuel//Services r\u00e9paration / entretien//Vente de gaz domestique (Butane, Propane)//Vente d'additifs carburants//Automate CB 24/24//DAB (Distributeur automatique de billets)",
+        "pop": "R",
+        "horaires_automate_24_24": "Oui",
+        "sp95_maj": "2023-02-08 07:51:18",
+        "sp95_prix": "1.910",
+        "cp": "20230",
+        "prix": "[{\"@nom\": \"Gazole\", \"@id\": \"1\", \"@maj\": \"2023-02-08 07:51:18\", \"@valeur\": \"1.880\"}, {\"@nom\": \"SP95\", \"@id\": \"2\", \"@maj\": \"2023-02-08 07:51:18\", \"@valeur\": \"1.910\"}]",
+        "ville": "Poggio-Mezzana",
+        "carburants_disponibles": "Gazole;SP95",
+        "code_region": "94",
+        "adresse": "STATION LUISI",
+        "code_departement": "2B",
+        "latitude": "4240000",
+        "departement": "Haute-Corse",
+        "carburants_indisponibles": "E85;GPLc;E10;SP98",
+        "longitude": 953000.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.53,
+          42.4
+        ]
+      },
+      "record_timestamp": "2023-06-06T09:04:00.264Z"
+    },
+    {
+      "datasetid": "prix-des-carburants-en-france-flux-instantane-v2",
+      "recordid": "cd8359f86f2277f0dea558840d3a59554e50d01f",
+      "fields": {
+        "services": "{\"service\": [\"Station de gonflage\", \"Vente de gaz domestique (Butane, Propane)\", \"Automate CB 24/24\", \"DAB (Distributeur automatique de billets)\"]}",
+        "region": "Pays de la Loire",
+        "gazole_maj": "2023-05-26 07:23:53",
+        "id": 44430003,
+        "horaires": "{\"@automate-24-24\": \"1\", \"jour\": [{\"@id\": \"1\", \"@nom\": \"Lundi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.30\", \"@fermeture\": \"19.30\"}}, {\"@id\": \"2\", \"@nom\": \"Mardi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.30\", \"@fermeture\": \"19.30\"}}, {\"@id\": \"3\", \"@nom\": \"Mercredi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.30\", \"@fermeture\": \"19.30\"}}, {\"@id\": \"4\", \"@nom\": \"Jeudi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.30\", \"@fermeture\": \"19.30\"}}, {\"@id\": \"5\", \"@nom\": \"Vendredi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.30\", \"@fermeture\": \"19.30\"}}, {\"@id\": \"6\", \"@nom\": \"Samedi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.30\", \"@fermeture\": \"19.30\"}}, {\"@id\": \"7\", \"@nom\": \"Dimanche\", \"@ferme\": \"1\"}]}",
+        "gazole_prix": "1.639",
+        "pop": "R",
+        "horaires_automate_24_24": "Oui",
+        "e10_maj": "2023-05-26 07:23:54",
+        "cp": "44430",
+        "prix": "[{\"@nom\": \"Gazole\", \"@id\": \"1\", \"@maj\": \"2023-05-26 07:23:53\", \"@valeur\": \"1.639\"}, {\"@nom\": \"E10\", \"@id\": \"5\", \"@maj\": \"2023-05-26 07:23:54\", \"@valeur\": \"1.829\"}, {\"@nom\": \"SP98\", \"@id\": \"6\", \"@maj\": \"2023-05-26 07:23:54\", \"@valeur\": \"1.889\"}]",
+        "ville": "Le Loroux-Bottereau",
+        "code_region": "52",
+        "code_departement": "44",
+        "latitude": "4723700",
+        "departement": "Loire-Atlantique",
+        "carburants_indisponibles": "SP95;E85;GPLc",
+        "geom": [
+          47.237,
+          -1.35
+        ],
+        "sp98_maj": "2023-05-26 07:23:54",
+        "sp98_prix": "1.889",
+        "services_service": "Station de gonflage//Vente de gaz domestique (Butane, Propane)//Automate CB 24/24//DAB (Distributeur automatique de billets)",
+        "e10_prix": "1.829",
+        "carburants_disponibles": "Gazole;E10;SP98",
+        "adresse": "Place Bretagne",
+        "longitude": -135000.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.35,
+          47.237
+        ]
+      },
+      "record_timestamp": "2023-06-06T09:04:00.264Z"
+    },
+    {
+      "datasetid": "prix-des-carburants-en-france-flux-instantane-v2",
+      "recordid": "23589f8a84354e3e336dc43aa5ea287cd425b891",
+      "fields": {
+        "services": "{\"service\": [\"Toilettes publiques\", \"Relais colis\", \"Boutique alimentaire\", \"Boutique non alimentaire\", \"Vente de fioul domestique\", \"Vente de p\u00e9trole lampant\", \"Station de gonflage\", \"Location de v\u00e9hicule\", \"Piste poids lourds\", \"Lavage automatique\", \"Lavage manuel\", \"Services r\u00e9paration / entretien\", \"Vente de gaz domestique (Butane, Propane)\"]}",
+        "region": "Occitanie",
+        "gazole_maj": "2023-05-24 07:10:36",
+        "id": 66700003,
+        "horaires": "{\"@automate-24-24\": \"\", \"jour\": [{\"@id\": \"1\", \"@nom\": \"Lundi\", \"@ferme\": \"\"}, {\"@id\": \"2\", \"@nom\": \"Mardi\", \"@ferme\": \"\"}, {\"@id\": \"3\", \"@nom\": \"Mercredi\", \"@ferme\": \"\"}, {\"@id\": \"4\", \"@nom\": \"Jeudi\", \"@ferme\": \"\"}, {\"@id\": \"5\", \"@nom\": \"Vendredi\", \"@ferme\": \"\"}, {\"@id\": \"6\", \"@nom\": \"Samedi\", \"@ferme\": \"\"}, {\"@id\": \"7\", \"@nom\": \"Dimanche\", \"@ferme\": \"\"}]}",
+        "gazole_prix": "1.709",
+        "pop": "R",
+        "horaires_automate_24_24": "Non",
+        "sp95_maj": "2023-05-24 07:10:36",
+        "sp95_prix": "1.919",
+        "cp": "66700",
+        "prix": "[{\"@nom\": \"Gazole\", \"@id\": \"1\", \"@maj\": \"2023-05-24 07:10:36\", \"@valeur\": \"1.709\"}, {\"@nom\": \"SP95\", \"@id\": \"2\", \"@maj\": \"2023-05-24 07:10:36\", \"@valeur\": \"1.919\"}, {\"@nom\": \"E85\", \"@id\": \"3\", \"@maj\": \"2023-05-17 07:14:59\", \"@valeur\": \"1.199\"}, {\"@nom\": \"GPLc\", \"@id\": \"4\", \"@maj\": \"2023-03-22 08:10:37\", \"@valeur\": \"0.989\"}, {\"@nom\": \"SP98\", \"@id\": \"6\", \"@maj\": \"2023-05-24 07:10:36\", \"@valeur\": \"1.939\"}]",
+        "ville": "Argel\u00e8s-sur-Mer",
+        "code_region": "76",
+        "code_departement": "66",
+        "latitude": "4255000",
+        "departement": "Pyr\u00e9n\u00e9es-Orientales",
+        "carburants_indisponibles": "E10",
+        "geom": [
+          42.55,
+          3.041
+        ],
+        "sp98_maj": "2023-05-24 07:10:36",
+        "sp98_prix": "1.939",
+        "services_service": "Toilettes publiques//Relais colis//Boutique alimentaire//Boutique non alimentaire//Vente de fioul domestique//Vente de p\u00e9trole lampant//Station de gonflage//Location de v\u00e9hicule//Piste poids lourds//Lavage automatique//Lavage manuel//Services r\u00e9paration / entretien//Vente de gaz domestique (Butane, Propane)",
+        "e85_prix": "1.199",
+        "gplc_prix": "0.989",
+        "gplc_maj": "2023-03-22 08:10:37",
+        "e85_maj": "2023-05-17 07:14:59",
+        "carburants_disponibles": "Gazole;SP95;E85;GPLc;SP98",
+        "adresse": "Avenue du 8 mai 1945",
+        "longitude": 304100.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.041,
+          42.55
+        ]
+      },
+      "record_timestamp": "2023-06-06T09:04:00.264Z"
+    },
+    {
+      "datasetid": "prix-des-carburants-en-france-flux-instantane-v2",
+      "recordid": "a4e8638372752df66bc654cf57ab0e5d82f34866",
+      "fields": {
+        "services": "{\"service\": [\"Toilettes publiques\", \"Boutique alimentaire\", \"Boutique non alimentaire\", \"Station de gonflage\", \"Carburant additiv\u00e9\", \"Lavage automatique\", \"Lavage manuel\", \"Services r\u00e9paration / entretien\", \"Vente de gaz domestique (Butane, Propane)\", \"DAB (Distributeur automatique de billets)\"]}",
+        "region": "Centre-Val de Loire",
+        "gazole_maj": "2023-06-06 00:01:00",
+        "id": 45100008,
+        "horaires": "{\"@automate-24-24\": \"\", \"jour\": [{\"@id\": \"1\", \"@nom\": \"Lundi\", \"@ferme\": \"\"}, {\"@id\": \"2\", \"@nom\": \"Mardi\", \"@ferme\": \"\"}, {\"@id\": \"3\", \"@nom\": \"Mercredi\", \"@ferme\": \"\"}, {\"@id\": \"4\", \"@nom\": \"Jeudi\", \"@ferme\": \"\"}, {\"@id\": \"5\", \"@nom\": \"Vendredi\", \"@ferme\": \"\"}, {\"@id\": \"6\", \"@nom\": \"Samedi\", \"@ferme\": \"\"}, {\"@id\": \"7\", \"@nom\": \"Dimanche\", \"@ferme\": \"\"}]}",
+        "gazole_prix": "1.624",
+        "pop": "R",
+        "horaires_automate_24_24": "Non",
+        "cp": "45100",
+        "prix": "[{\"@nom\": \"Gazole\", \"@id\": \"1\", \"@maj\": \"2023-06-06 00:01:00\", \"@valeur\": \"1.624\"}, {\"@nom\": \"E85\", \"@id\": \"3\", \"@maj\": \"2023-06-06 00:01:00\", \"@valeur\": \"1.049\"}, {\"@nom\": \"GPLc\", \"@id\": \"4\", \"@maj\": \"2023-06-06 00:01:00\", \"@valeur\": \"0.969\"}]",
+        "ville": "Orl\u00e9ans",
+        "code_region": "24",
+        "code_departement": "45",
+        "latitude": "4784264",
+        "departement": "Loiret",
+        "carburants_indisponibles": "SP95;E10;SP98",
+        "geom": [
+          47.84264,
+          1.92524
+        ],
+        "services_service": "Toilettes publiques//Boutique alimentaire//Boutique non alimentaire//Station de gonflage//Carburant additiv\u00e9//Lavage automatique//Lavage manuel//Services r\u00e9paration / entretien//Vente de gaz domestique (Butane, Propane)//DAB (Distributeur automatique de billets)",
+        "e85_prix": "1.049",
+        "gplc_prix": "0.969",
+        "gplc_maj": "2023-06-06 00:01:00",
+        "e85_maj": "2023-06-06 00:01:00",
+        "carburants_disponibles": "Gazole;E85;GPLc",
+        "adresse": "39 AV .J.F.KENNEDY",
+        "longitude": 192524.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.92524,
+          47.84264
+        ]
+      },
+      "record_timestamp": "2023-06-06T09:04:00.264Z"
+    },
+    {
+      "datasetid": "prix-des-carburants-en-france-flux-instantane-v2",
+      "recordid": "b169889009720a7ff5adf0342e4967da2d690f06",
+      "fields": {
+        "services": "{\"service\": [\"Toilettes publiques\", \"Boutique non alimentaire\", \"Vente de fioul domestique\", \"Vente de p\u00e9trole lampant\", \"Station de gonflage\", \"Lavage automatique\", \"Vente de gaz domestique (Butane, Propane)\", \"Automate CB 24/24\", \"DAB (Distributeur automatique de billets)\"]}",
+        "region": "Auvergne-Rh\u00f4ne-Alpes",
+        "gazole_maj": "2023-05-20 08:00:16",
+        "id": 15290001,
+        "horaires": "{\"@automate-24-24\": \"1\", \"jour\": [{\"@id\": \"1\", \"@nom\": \"Lundi\", \"@ferme\": \"\"}, {\"@id\": \"2\", \"@nom\": \"Mardi\", \"@ferme\": \"\"}, {\"@id\": \"3\", \"@nom\": \"Mercredi\", \"@ferme\": \"\"}, {\"@id\": \"4\", \"@nom\": \"Jeudi\", \"@ferme\": \"\"}, {\"@id\": \"5\", \"@nom\": \"Vendredi\", \"@ferme\": \"\"}, {\"@id\": \"6\", \"@nom\": \"Samedi\", \"@ferme\": \"\"}, {\"@id\": \"7\", \"@nom\": \"Dimanche\", \"@ferme\": \"\"}]}",
+        "gazole_prix": "1.695",
+        "pop": "R",
+        "horaires_automate_24_24": "Oui",
+        "e10_maj": "2023-05-20 08:00:17",
+        "cp": "15290",
+        "prix": "[{\"@nom\": \"Gazole\", \"@id\": \"1\", \"@maj\": \"2023-05-20 08:00:16\", \"@valeur\": \"1.695\"}, {\"@nom\": \"E10\", \"@id\": \"5\", \"@maj\": \"2023-05-20 08:00:17\", \"@valeur\": \"1.818\"}, {\"@nom\": \"SP98\", \"@id\": \"6\", \"@maj\": \"2023-05-20 08:00:17\", \"@valeur\": \"1.918\"}]",
+        "ville": "Le Rouget-Pers",
+        "code_region": "84",
+        "code_departement": "15",
+        "latitude": "4485500",
+        "departement": "Cantal",
+        "carburants_indisponibles": "SP95;E85;GPLc",
+        "geom": [
+          44.855,
+          2.233
+        ],
+        "sp98_maj": "2023-05-20 08:00:17",
+        "sp98_prix": "1.918",
+        "services_service": "Toilettes publiques//Boutique non alimentaire//Vente de fioul domestique//Vente de p\u00e9trole lampant//Station de gonflage//Lavage automatique//Vente de gaz domestique (Butane, Propane)//Automate CB 24/24//DAB (Distributeur automatique de billets)",
+        "e10_prix": "1.818",
+        "carburants_disponibles": "Gazole;E10;SP98",
+        "adresse": "35 bis Avenue du 15 Septembre 1945",
+        "longitude": 223300.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.233,
+          44.855
+        ]
+      },
+      "record_timestamp": "2023-06-06T09:04:00.264Z"
+    },
+    {
+      "datasetid": "prix-des-carburants-en-france-flux-instantane-v2",
+      "recordid": "a0d05b1a5b11bb43b52770a9440c1c331e2cbbba",
+      "fields": {
+        "geom": [
+          50.364,
+          3.097
+        ],
+        "region": "Hauts-de-France",
+        "sp98_maj": "2023-06-06 04:02:00",
+        "gazole_maj": "2023-06-06 04:02:00",
+        "id": 59450002,
+        "horaires": "{\"@automate-24-24\": \"\", \"jour\": [{\"@id\": \"1\", \"@nom\": \"Lundi\", \"@ferme\": \"\"}, {\"@id\": \"2\", \"@nom\": \"Mardi\", \"@ferme\": \"\"}, {\"@id\": \"3\", \"@nom\": \"Mercredi\", \"@ferme\": \"\"}, {\"@id\": \"4\", \"@nom\": \"Jeudi\", \"@ferme\": \"\"}, {\"@id\": \"5\", \"@nom\": \"Vendredi\", \"@ferme\": \"\"}, {\"@id\": \"6\", \"@nom\": \"Samedi\", \"@ferme\": \"\"}, {\"@id\": \"7\", \"@nom\": \"Dimanche\", \"@ferme\": \"\"}]}",
+        "sp98_prix": "1.918",
+        "gazole_prix": "1.646",
+        "pop": "R",
+        "horaires_automate_24_24": "Non",
+        "e10_maj": "2023-06-06 04:02:00",
+        "e10_prix": "1.838",
+        "cp": "59450",
+        "prix": "[{\"@nom\": \"Gazole\", \"@id\": \"1\", \"@maj\": \"2023-06-06 04:02:00\", \"@valeur\": \"1.646\"}, {\"@nom\": \"E10\", \"@id\": \"5\", \"@maj\": \"2023-06-06 04:02:00\", \"@valeur\": \"1.838\"}, {\"@nom\": \"SP98\", \"@id\": \"6\", \"@maj\": \"2023-06-06 04:02:00\", \"@valeur\": \"1.918\"}]",
+        "ville": "Douai",
+        "carburants_disponibles": "Gazole;E10;SP98",
+        "code_region": "32",
+        "adresse": "121 AVENUE ROGER SALENGRO",
+        "code_departement": "59",
+        "latitude": "5036400",
+        "departement": "Nord",
+        "carburants_indisponibles": "SP95;E85;GPLc",
+        "longitude": 309700.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.097,
+          50.364
+        ]
+      },
+      "record_timestamp": "2023-06-06T09:04:00.264Z"
+    },
+    {
+      "datasetid": "prix-des-carburants-en-france-flux-instantane-v2",
+      "recordid": "d6b82b6c1525c2888fdfabe8452b372afd9cc47e",
+      "fields": {
+        "services": "{\"service\": [\"Boutique alimentaire\", \"Boutique non alimentaire\", \"Restauration \u00e0 emporter\", \"Vente d'additifs carburants\", \"Automate CB 24/24\", \"DAB (Distributeur automatique de billets)\"]}",
+        "region": "Hauts-de-France",
+        "gazole_maj": "2023-05-24 07:47:05",
+        "id": 62840004,
+        "horaires": "{\"@automate-24-24\": \"1\", \"jour\": [{\"@id\": \"1\", \"@nom\": \"Lundi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.00\", \"@fermeture\": \"21.00\"}}, {\"@id\": \"2\", \"@nom\": \"Mardi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.00\", \"@fermeture\": \"21.00\"}}, {\"@id\": \"3\", \"@nom\": \"Mercredi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.00\", \"@fermeture\": \"21.00\"}}, {\"@id\": \"4\", \"@nom\": \"Jeudi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.00\", \"@fermeture\": \"21.00\"}}, {\"@id\": \"5\", \"@nom\": \"Vendredi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.00\", \"@fermeture\": \"21.00\"}}, {\"@id\": \"6\", \"@nom\": \"Samedi\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"08.00\", \"@fermeture\": \"21.00\"}}, {\"@id\": \"7\", \"@nom\": \"Dimanche\", \"@ferme\": \"\", \"horaire\": {\"@ouverture\": \"09.00\", \"@fermeture\": \"13.00\"}}]}",
+        "gazole_prix": "1.659",
+        "pop": "R",
+        "horaires_automate_24_24": "Oui",
+        "e10_maj": "2023-05-24 07:47:05",
+        "cp": "62840",
+        "prix": "[{\"@nom\": \"Gazole\", \"@id\": \"1\", \"@maj\": \"2023-05-24 07:47:05\", \"@valeur\": \"1.659\"}, {\"@nom\": \"E10\", \"@id\": \"5\", \"@maj\": \"2023-05-24 07:47:05\", \"@valeur\": \"1.809\"}, {\"@nom\": \"SP98\", \"@id\": \"6\", \"@maj\": \"2023-05-24 07:47:05\", \"@valeur\": \"1.869\"}]",
+        "ville": "Fleurbaix",
+        "code_region": "32",
+        "code_departement": "62",
+        "latitude": "5065300",
+        "departement": "Pas-de-Calais",
+        "carburants_indisponibles": "SP95;E85;GPLc",
+        "geom": [
+          50.653,
+          2.839
+        ],
+        "sp98_maj": "2023-05-24 07:47:05",
+        "sp98_prix": "1.869",
+        "services_service": "Boutique alimentaire//Boutique non alimentaire//Restauration \u00e0 emporter//Vente d'additifs carburants//Automate CB 24/24//DAB (Distributeur automatique de billets)",
+        "e10_prix": "1.809",
+        "carburants_disponibles": "Gazole;E10;SP98",
+        "adresse": "7bis rue des Glattignies",
+        "longitude": 283900.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.839,
+          50.653
+        ]
+      },
+      "record_timestamp": "2023-06-06T09:04:00.264Z"
+    },
+    {
+      "datasetid": "prix-des-carburants-en-france-flux-instantane-v2",
+      "recordid": "32970a9057a2d2cb83eaeb39e47d3879aa8a0e32",
+      "fields": {
+        "geom": [
+          49.08893,
+          -0.8136
+        ],
+        "services": "{\"service\": \"DAB (Distributeur automatique de billets)\"}",
+        "region": "Normandie",
+        "sp98_maj": "2023-06-02 10:54:37",
+        "gazole_maj": "2023-06-02 10:54:36",
+        "id": 14240001,
+        "sp98_prix": "1.899",
+        "gazole_prix": "1.669",
+        "services_service": "DAB (Distributeur automatique de billets)",
+        "pop": "R",
+        "horaires_automate_24_24": "Non",
+        "e10_maj": "2023-06-02 10:54:36",
+        "e10_prix": "1.834",
+        "cp": "14240",
+        "prix": "[{\"@nom\": \"Gazole\", \"@id\": \"1\", \"@maj\": \"2023-06-02 10:54:36\", \"@valeur\": \"1.669\"}, {\"@nom\": \"E10\", \"@id\": \"5\", \"@maj\": \"2023-06-02 10:54:36\", \"@valeur\": \"1.834\"}, {\"@nom\": \"SP98\", \"@id\": \"6\", \"@maj\": \"2023-06-02 10:54:37\", \"@valeur\": \"1.899\"}]",
+        "ville": "Caumont-sur-Aure",
+        "carburants_disponibles": "Gazole;E10;SP98",
+        "code_region": "28",
+        "adresse": "Route de Torigni",
+        "code_departement": "14",
+        "latitude": "4908893",
+        "departement": "Calvados",
+        "carburants_indisponibles": "SP95;E85;GPLc",
+        "longitude": -81360.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8136,
+          49.08893
+        ]
+      },
+      "record_timestamp": "2023-06-06T09:04:00.264Z"
+    },
+    {
+      "datasetid": "prix-des-carburants-en-france-flux-instantane-v2",
+      "recordid": "1dc02d26aea3bc0934288adfdab579abc7c72b2b",
+      "fields": {
+        "services": "{\"service\": [\"Toilettes publiques\", \"Laverie\", \"Boutique alimentaire\", \"Boutique non alimentaire\", \"Piste poids lourds\", \"Vente de gaz domestique (Butane, Propane)\", \"Vente d'additifs carburants\", \"Automate CB 24/24\"]}",
+        "region": "Centre-Val de Loire",
+        "gazole_maj": "2023-06-06 09:29:14",
+        "id": 41350003,
+        "horaires": "{\"@automate-24-24\": \"1\", \"jour\": [{\"@id\": \"1\", \"@nom\": \"Lundi\", \"@ferme\": \"1\"}, {\"@id\": \"2\", \"@nom\": \"Mardi\", \"@ferme\": \"1\"}, {\"@id\": \"3\", \"@nom\": \"Mercredi\", \"@ferme\": \"1\"}, {\"@id\": \"4\", \"@nom\": \"Jeudi\", \"@ferme\": \"1\"}, {\"@id\": \"5\", \"@nom\": \"Vendredi\", \"@ferme\": \"1\"}, {\"@id\": \"6\", \"@nom\": \"Samedi\", \"@ferme\": \"1\"}, {\"@id\": \"7\", \"@nom\": \"Dimanche\", \"@ferme\": \"1\"}]}",
+        "gazole_prix": "1.629",
+        "pop": "R",
+        "horaires_automate_24_24": "Oui",
+        "sp95_maj": "2023-05-22 13:07:42",
+        "e10_maj": "2023-06-05 08:31:50",
+        "sp95_prix": "1.859",
+        "cp": "41350",
+        "prix": "[{\"@nom\": \"Gazole\", \"@id\": \"1\", \"@maj\": \"2023-06-06 09:29:14\", \"@valeur\": \"1.629\"}, {\"@nom\": \"SP95\", \"@id\": \"2\", \"@maj\": \"2023-05-22 13:07:42\", \"@valeur\": \"1.859\"}, {\"@nom\": \"E10\", \"@id\": \"5\", \"@maj\": \"2023-06-05 08:31:50\", \"@valeur\": \"1.805\"}, {\"@nom\": \"SP98\", \"@id\": \"6\", \"@maj\": \"2023-05-30 10:12:13\", \"@valeur\": \"1.935\"}]",
+        "ville": "Vineuil",
+        "code_region": "24",
+        "code_departement": "41",
+        "latitude": "4758400",
+        "departement": "Loir-et-Cher",
+        "carburants_indisponibles": "E85;GPLc",
+        "geom": [
+          47.584,
+          1.375
+        ],
+        "sp98_maj": "2023-05-30 10:12:13",
+        "sp98_prix": "1.935",
+        "services_service": "Toilettes publiques//Laverie//Boutique alimentaire//Boutique non alimentaire//Piste poids lourds//Vente de gaz domestique (Butane, Propane)//Vente d'additifs carburants//Automate CB 24/24",
+        "e10_prix": "1.805",
+        "carburants_disponibles": "Gazole;SP95;E10;SP98",
+        "adresse": "RUE PAUL VALERY",
+        "longitude": 137500.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.375,
+          47.584
+        ]
+      },
+      "record_timestamp": "2023-06-06T09:04:00.264Z"}]
