@@ -13,25 +13,29 @@ def createRequest(ti):
 
   # ? setting the elements array with all the data
   for i in range(0, len(data)):
-    element = {
-      "region": data[i]["fields"]["region"],
-      "gazole_maj": data[i]["fields"]["gazole_maj"],
-      "gazole_prix": data[i]["fields"]["gazole_prix"],
-      "ville": data[i]["fields"]["ville"],
-      "code_region": data[i]["fields"]["code_region"],
-      "code_departement": data[i]["fields"]["code_departement"],
-      "longitude": data[i]["fields"]["longitude"],
-      "latitude": data[i]["fields"]["latitude"],
-      "cp": data[i]["fields"]["cp"],
-      "departement": data[i]["fields"]["departement"],
-      "carburants_indisponibles": data[i]["fields"]["carburants_indisponibles"],
-      "geomi": data[i]["fields"]["geom"][0],
-      "geom1": data[i]["fields"]["geom"][1],
-      "prix": data[i]["fields"]["prix"],
-      "carburants_disponibles": data[i]["fields"]["carburants_disponibles"],
-      "adresse": data[i]["fields"]["adresse"]
+    temp = data[i]["fields"]
+
+    if "region" in temp and "gazole_maj" in temp and "gazole_prix" in temp and "ville" in temp and "code_region" in temp and "code_departement" in temp and "longitude" in temp and "latitude" in temp and "cp" in temp and "departement" in temp and "carburants_indisponibles" in temp and "geom" in temp and "prix" in temp and "carburants_disponibles" in temp and "adresse" in temp:
+      element = {
+      "region": temp["region"],
+      "gazole_maj": temp["gazole_maj"],
+      "gazole_prix": temp["gazole_prix"],
+      "ville": temp["ville"],
+      "code_region": temp["code_region"],
+      "code_departement": temp["code_departement"],
+      "longitude": temp["longitude"],
+      "latitude": temp["latitude"],
+      "cp": temp["cp"],
+      "departement": temp["departement"],
+      "carburants_indisponibles": temp["carburants_indisponibles"],
+      "geomi": temp["geom"][0],
+      "geom1": temp["geom"][1],
+      "prix": temp["prix"],
+      "carburants_disponibles": temp["carburants_disponibles"],
+      "adresse": temp["adresse"]
     }
     elements.append(element)
+    
     
   columns = ""
 
