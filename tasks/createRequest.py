@@ -39,8 +39,8 @@ def createRequest(ti):
       "prix": temp["prix"],
       "carburants_disponibles": temp["carburants_disponibles"],
       "adresse": temp["adresse"]
-    }
-    elements.append(element)
+      }
+      elements.append(element)
     
     
   columns = ""
