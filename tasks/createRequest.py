@@ -15,7 +15,7 @@ def createRequest(ti):
   for i in range(0, len(data)):
     temp = data[i]["fields"]
 
-    if "region" in temp and "gazole_maj" in temp and "gazole_prix" in temp and "ville" in temp and "code_region" in temp and "code_departement" in temp and "longitude" in temp and "latitude" in temp and "cp" in temp and "departement" in temp and "carburants_indisponibles" in temp and "geom" in temp and "prix" in temp and "carburants_disponibles" in temp and "adresse" in temp:
+    if "region" in temp and "e10_prix" in temp and "gazole_maj" in temp and "sp95_prix" in temp and "sp98_prix" in temp and "sp95_maj" in temp and "e10_maj" in temp and "sp98_maj" in temp and "gazole_prix" in temp and "ville" in temp and "code_region" in temp and "code_departement" in temp and "longitude" in temp and "latitude" in temp and "cp" in temp and "departement" in temp and "carburants_indisponibles" in temp and "geom" in temp and "prix" in temp and "carburants_disponibles" in temp and "adresse" in temp:
       element = {
       "region": temp["region"],
       "gazole_maj": temp["gazole_maj"],
@@ -25,6 +25,12 @@ def createRequest(ti):
       "code_departement": temp["code_departement"],
       "longitude": temp["longitude"],
       "latitude": temp["latitude"],
+      "sp95_prix": temp["sp95_prix"],
+      "sp95_maj": temp["sp95_maj"],
+      "e10_maj": temp["e10_maj"],
+      "e10_prix": temp["e10_prix"],
+      "sp98_maj": temp["sp98_maj"],
+      "sp98_prix": temp["sp98_maj"],
       "cp": temp["cp"],
       "departement": temp["departement"],
       "carburants_indisponibles": temp["carburants_indisponibles"],
