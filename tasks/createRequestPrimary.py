@@ -2,13 +2,13 @@ import psycopg2 as p
 import pandas as pd
 import json
 
-def createRequest(ti):
+def createRequestPrimary(ti):
   request = ""
   # ? connection do db
   elements = []
 
   # ? reading the data
-  data = ti.xcom_pull(key="data", task_ids="scrap_from_web")
+  data = ti.xcom_pull(key="data_primary", task_ids="scrap_from_web_primary")
   data = data["records"]
 
   # ? setting the elements array with all the data
