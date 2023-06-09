@@ -6,6 +6,8 @@ from tasks.scrapFromWebPrimary import scrapFromWebPrimary
 from tasks.scrapFromWebSecond import scrapFromWebSecond
 from tasks.createRequestPrimary import createRequestPrimary
 from tasks.createRequestSecond import createRequestSecond
+from tasks.formatDataPrimary import formatDataPrimary
+from tasks.formatDataSecondary import formatDataSecondary
 
 
 with DAG(
@@ -13,10 +15,6 @@ with DAG(
 	schedule=None,
 	start_date=days_ago(0)
 ) as dag:
-
-	def sendToPg(ti):
-		d = ti.xcom_pull(key="insert_request", task_ids="create_request")
-		print(d)
 
 	scrap_from_web_primary = PythonOperator(
 		task_id='scrap_from_web_primary',
@@ -55,7 +53,16 @@ with DAG(
 		{{ti.xcom_pull(key="insert_request", task_ids="create_request_second")}}
 		"""
 	)
-	 
 
-	scrap_from_web_primary >> create_request_primary >> send_to_pg_primary
-	scrap_from_web_second >> create_request_second >> send_to_pg_second
+	format_data_primary = PythonOperator(
+		task_id="format_data_primary",
+		python_callable=formatDataPrimary
+	)
+
+	format_data_secondary = PythonOperator(
+		task_id="format_data_secondary",
+		python_callable=formatDataSecondary
+	)
+
+	scrap_from_web_primary >> create_request_primary >> send_to_pg_primary >> format_data_primary
+	scrap_from_web_second >> create_request_second >> send_to_pg_second >> format_data_secondary

@@ -4,7 +4,6 @@ import json
 
 def createRequestSecond(ti):
   request = ""
-  # ? connection do db
   elements = []
 
   # ? reading the data
