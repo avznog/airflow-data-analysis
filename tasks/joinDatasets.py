@@ -18,6 +18,10 @@ def joinDatasets(ti):
   dataset_consommation['code_departements'] = dataset_consommation['code_departements'].astype(str)
 
   joined_df = dataset_carburants.merge(dataset_consommation, on='code_departements', how='outer')
-
-  print(joined_df)
+  for col in joined_df.columns:
+    if col == 'code_departements':
+      joined_df[col].fillna(0, inplace=True)
+    else:
+      joined_df[col].fillna(0.0, inplace=True)
+  
   ti.xcom_push(key="joined_df", value=joined_df)
