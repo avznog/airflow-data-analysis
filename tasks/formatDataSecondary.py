@@ -23,5 +23,5 @@ def formatDataSecondary(ti):
             data.rename(columns={col: columns[counter]}, inplace=True)
             counter += 1
           data = data.drop(["code_regions", "operateurs", "g_consototale", "g_consot", "libelle_regions", "e_consor"], axis=1)
-          ti.xcom_push(key="data_formated_2", value=data)
+          ti.xcom_push(key="data_formated_consommation", value=data)
         connection.commit()

@@ -30,7 +30,7 @@ def createRequestPrimary(ti):
       "e10_maj": temp["e10_maj"],
       "e10_prix": temp["e10_prix"],
       "sp98_maj": temp["sp98_maj"],
-      "sp98_prix": temp["sp98_maj"],
+      "sp98_prix": temp["sp98_prix"],
       "cp": temp["cp"],
       "departement": temp["departement"],
       "carburants_indisponibles": temp["carburants_indisponibles"],

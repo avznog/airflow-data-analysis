@@ -1,8 +1,4 @@
-import psycopg2 as p
-import pandas as pd
-import json
-
-def createRequestSecond(ti):
+def createRequestSecondary(ti):
   request = ""
   elements = []
 

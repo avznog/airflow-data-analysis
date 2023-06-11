@@ -23,8 +23,7 @@ def formatDataPrimary(ti):
       for col in data.columns:
         data.rename(columns= { col: columns[counter]}, inplace=True)
         counter += 1
-      data = data.drop(["region", "ville", "code_region","code_departement", "longitude", "latitude", "carburants_indisponibles", "geomi", "geom1", "prix", "carburants_disponibles", "adresse"], axis=1)
-      
-      ti.xcom_push(key="data_formated_1", value=data)
+      data = data.drop(["region", "ville", "code_region", "departement", "longitude", "latitude", "carburants_indisponibles", "geomi", "geom1", "prix", "carburants_disponibles", "adresse"], axis=1)
+      ti.xcom_push(key="data_formated_carburants", value=data)
     connection.commit()
     return data
