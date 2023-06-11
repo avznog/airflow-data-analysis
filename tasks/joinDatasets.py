@@ -33,4 +33,5 @@ def joinDatasets(ti):
 
   # Reset the index of the DataFrame
   joined_df = joined_df.reset_index(drop=True)
+  print(joined_df.to_dict())
   ti.xcom_push(key="joined_df", value=joined_df)
