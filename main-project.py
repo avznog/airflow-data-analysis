@@ -11,6 +11,7 @@ from tasks.formatDataSecondary import formatDataSecondary
 from tasks.formatForMeanPrimary import formatForMeanPrimary
 from tasks.formatForMeanSecondary import formatForMeanSecondary
 from tasks.joinDatasets import joinDatasets
+from tasks.indexDataElastic import indexDataElastic
 
 
 with DAG(
@@ -95,7 +96,13 @@ with DAG(
 		python_callable=joinDatasets
 	)
 
+	# ? send data to elastic
+	index_data = PythonOperator(
+		task_id="index_data",
+		python_callable=indexDataElastic
+	)
+
 	# ! ----------------- workflow ------------------
 
 	[scrap_from_web_primary >> create_request_primary >> send_to_pg_primary >> format_data_primary >> format_for_mean_primary,
-   scrap_from_web_second >> create_request_second >> send_to_pg_second >> format_data_secondary >> format_for_mean_secondary] >> join_datasets
+   scrap_from_web_second >> create_request_second >> send_to_pg_second >> format_data_secondary >> format_for_mean_secondary] >> join_datasets >> index_data
